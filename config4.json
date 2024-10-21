@@ -1,0 +1,1527 @@
+{
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "my_profile2",
+      "store_fakeip": true
+    },
+    "clash_api": {
+      "external_ui": "ui",
+      "external_controller": "0.0.0.0:9090",
+      "external_ui_download_detour": "Proxy",
+      "default_mode": "rule"
+    }
+  },
+  "log": {
+    "disabled": true,
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "google",
+        "address": "tls://8.8.8.8",
+        "detour": "Proxy"
+      },
+      {
+        "tag": "local-dns",
+        "address": "tls://223.5.5.5",
+        "detour": "direct"
+      },
+      {
+        "tag": "fakeip-dns",
+        "address": "fakeip"
+      },
+      {
+        "tag": "block-dns",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": [
+          "geosite-category-ads-all"
+        ],
+        "server": "block-dns"
+      },
+      {
+        "outbound": "any",
+        "server": "local-dns"
+      },
+      {
+        "rule_set": [
+          "geosite-youtube",
+          "geosite-telegram",
+          "geosite-category-media",
+          "geosite-openai",
+          "geosite-github",
+          "geosite-jetbrains",
+          "geosite-spotify",
+          "geosite-cloudflare",
+          "geosite-google"
+        ],
+        "rewrite_ttl": 1,
+        "server": "fakeip-dns"
+      },
+      {
+        "domain_suffix": [
+          "edu.cn",
+          "gov.cn",
+          "mil.cn",
+          "ac.cn",
+          "com.cn",
+          "net.cn",
+          "org.cn",
+          "中国",
+          "中國"
+        ],
+        "server": "local-dns"
+      },
+      {
+        "rule_set": [
+          "geosite-cn",
+          "geosite-icloud@cn",
+          "geosite-apple@cn",
+          "geosite-microsoft@cn"
+        ],
+        "server": "local-dns"
+      },
+      {
+        "query_type": [
+          "A"
+        ],
+        "rewrite_ttl": 1,
+        "server": "fakeip-dns"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 8888,
+      "sniff": true
+    },
+    {
+      "type": "redirect",
+      "tag": "redirect-in",
+      "listen": "::",
+      "sniff_override_destination": false,
+      "listen_port": 9887,
+      "sniff": true
+    },
+    {
+      "type": "tun",
+      "inet4_address": "172.19.0.1/30",
+      "stack": "system",
+      "sniff": true,
+      "sniff_override_destination": false,
+      "auto_route": true,
+      "gso": false,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 8888
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "Proxy",
+      "outbounds": [
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector",
+      "default": "🇭🇰  香港"
+    },
+    {
+      "tag": "Youtube",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Telegram",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Category-media",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Openai",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Github",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Jetbrains",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Spotify",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Cloudflare",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Google",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰  香港",
+        "🇺🇸  美国",
+        "🇯🇵  日本",
+        "🇸🇬  新加坡",
+        "🇹🇼  台湾",
+        "☁️ ",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "🇭🇰  香港",
+      "outbounds": [
+        "VIP-v2ray-Hong Kong 01",
+        "VIP-v2ray-Hong Kong 02",
+        "VIP-v2ray-Hong Kong 03",
+        "VIP-v2ray-Hong Kong 04",
+        "VIP-v2ray-Hong Kong 05",
+        "VIP-v2ray-Hong Kong 06",
+        "VIP-v2ray-Hong Kong 07",
+        "VIP-v2ray-Hong Kong 08",
+        "v2ray-Hong Kong 01",
+        "v2ray-Hong Kong 02",
+        "v2ray-Hong Kong 03",
+        "v2ray-Hong Kong 04",
+        "v2ray-Hong Kong 05"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇺🇸  美国",
+      "outbounds": [
+        "VIP-v2ray-United States 01",
+        "VIP-v2ray-United States 02",
+        "VIP-v2ray-United States 03",
+        "VIP-v2ray-United States 04",
+        "VIP-v2ray-Z-Russia",
+        "v2ray-United States 01",
+        "v2ray-United States 02",
+        "v2ray-United States 03",
+        "v2ray-United States 04",
+        "v2ray-Z-Russia"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇯🇵  日本",
+      "outbounds": [
+        "VIP-v2ray-Japan 01",
+        "VIP-v2ray-Japan 02",
+        "v2ray-Japan 01",
+        "v2ray-Japan 02"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇸🇬  新加坡",
+      "outbounds": [
+        "VIP-v2ray-Singapore 01",
+        "VIP-v2ray-Singapore 02",
+        "v2ray-Singapore 01",
+        "v2ray-Singapore 02"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇹🇼  台湾",
+      "outbounds": [
+        "VIP-v2ray-Taiwan 01",
+        "VIP-v2ray-Taiwan 02",
+        "v2ray-Taiwan 01",
+        "v2ray-Taiwan 02"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "☁️ ",
+      "outbounds": [
+        "VIP-v2ray-Hong Kong 01",
+        "VIP-v2ray-Hong Kong 02",
+        "VIP-v2ray-Hong Kong 03",
+        "VIP-v2ray-Hong Kong 04",
+        "VIP-v2ray-Hong Kong 05",
+        "VIP-v2ray-Hong Kong 06",
+        "VIP-v2ray-Hong Kong 07",
+        "VIP-v2ray-Hong Kong 08",
+        "VIP-v2ray-Japan 01",
+        "VIP-v2ray-Japan 02",
+        "VIP-v2ray-Korea",
+        "VIP-v2ray-Singapore 01",
+        "VIP-v2ray-Singapore 02",
+        "VIP-v2ray-Taiwan 01",
+        "VIP-v2ray-Taiwan 02",
+        "VIP-v2ray-United States 01",
+        "VIP-v2ray-United States 02",
+        "VIP-v2ray-United States 03",
+        "VIP-v2ray-United States 04",
+        "VIP-v2ray-Z-Canada",
+        "VIP-v2ray-Z-England",
+        "VIP-v2ray-Z-Germany",
+        "VIP-v2ray-Z-India",
+        "VIP-v2ray-Z-Russia",
+        "v2ray-Hong Kong 01",
+        "v2ray-Hong Kong 02",
+        "v2ray-Hong Kong 03",
+        "v2ray-Hong Kong 04",
+        "v2ray-Hong Kong 05",
+        "v2ray-Japan 01",
+        "v2ray-Japan 02",
+        "v2ray-Singapore 01",
+        "v2ray-Singapore 02",
+        "v2ray-Taiwan 01",
+        "v2ray-Taiwan 02",
+        "v2ray-United States 01",
+        "v2ray-United States 02",
+        "v2ray-United States 03",
+        "v2ray-United States 04",
+        "v2ray-Z-Canada",
+        "v2ray-Z-England",
+        "v2ray-Z-Germany",
+        "v2ray-Z-India",
+        "v2ray-Z-Russia",
+        "剩余流量：1.06TB",
+        "过期时间：2025-02-28"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "type": "direct",
+      "tag": "➜ Direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 01",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30001,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 02",
+      "server": "monocerotis.weltknoten.xyz",
+      "server_port": 30002,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 03",
+      "server": "orionis.weltknoten.xyz",
+      "server_port": 30003,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "orionis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 04",
+      "server": "phoenicis.weltknoten.xyz",
+      "server_port": 30004,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 05",
+      "server": "scorpii.weltknoten.xyz",
+      "server_port": 30020,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "scorpii.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 06",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30021,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 07",
+      "server": "monocerotis.weltknoten.xyz",
+      "server_port": 30022,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Hong Kong 08",
+      "server": "orionis.weltknoten.xyz",
+      "server_port": 30023,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "orionis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Japan 01",
+      "server": "phoenicis.weltknoten.xyz",
+      "server_port": 30005,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Japan 02",
+      "server": "scorpii.weltknoten.xyz",
+      "server_port": 30006,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "scorpii.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Korea",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30024,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Singapore 01",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30007,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Singapore 02",
+      "server": "monocerotis.weltknoten.xyz",
+      "server_port": 30008,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Taiwan 01",
+      "server": "orionis.weltknoten.xyz",
+      "server_port": 30009,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "orionis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Taiwan 02",
+      "server": "orionis.weltknoten.xyz",
+      "server_port": 30010,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "orionis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-United States 01",
+      "server": "phoenicis.weltknoten.xyz",
+      "server_port": 30011,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-United States 02",
+      "server": "scorpii.weltknoten.xyz",
+      "server_port": 30012,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "scorpii.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-United States 03",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30013,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-United States 04",
+      "server": "monocerotis.weltknoten.xyz",
+      "server_port": 30014,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Z-Canada",
+      "server": "orionis.weltknoten.xyz",
+      "server_port": 30018,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "orionis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Z-England",
+      "server": "phoenicis.weltknoten.xyz",
+      "server_port": 30015,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Z-Germany",
+      "server": "scorpii.weltknoten.xyz",
+      "server_port": 30017,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "scorpii.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Z-India",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30016,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "VIP-v2ray-Z-Russia",
+      "server": "andromedae.weltknoten.xyz",
+      "server_port": 30019,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "andromedae.weltknoten.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Hong Kong 01",
+      "server": "aquaril.ceres.pics",
+      "server_port": 25021,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "aquaril.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Hong Kong 02",
+      "server": "centauri.ceres.pics",
+      "server_port": 25025,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "centauri.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Hong Kong 03",
+      "server": "leonis.ceres.pics",
+      "server_port": 25022,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "leonis.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Hong Kong 04",
+      "server": "ophiuchi.ceres.pics",
+      "server_port": 25026,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "ophiuchi.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Hong Kong 05",
+      "server": "piscium.ceres.pics",
+      "server_port": 25023,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "piscium.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Japan 01",
+      "server": "aquaril.ceres.pics",
+      "server_port": 25027,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "aquaril.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Japan 02",
+      "server": "centauri.ceres.pics",
+      "server_port": 25024,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "centauri.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Singapore 01",
+      "server": "leonis.ceres.pics",
+      "server_port": 25012,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "leonis.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Singapore 02",
+      "server": "ophiuchi.ceres.pics",
+      "server_port": 25013,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "ophiuchi.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Taiwan 01",
+      "server": "piscium.ceres.pics",
+      "server_port": 25014,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "piscium.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Taiwan 02",
+      "server": "piscium.ceres.pics",
+      "server_port": 25015,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "piscium.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-United States 01",
+      "server": "aquaril.ceres.pics",
+      "server_port": 25006,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "aquaril.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-United States 02",
+      "server": "centauri.ceres.pics",
+      "server_port": 25007,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "centauri.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-United States 03",
+      "server": "leonis.ceres.pics",
+      "server_port": 25008,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "leonis.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-United States 04",
+      "server": "ophiuchi.ceres.pics",
+      "server_port": 25009,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "ophiuchi.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Z-Canada",
+      "server": "piscium.ceres.pics",
+      "server_port": 25016,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "piscium.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Z-England",
+      "server": "aquaril.ceres.pics",
+      "server_port": 25019,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "aquaril.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Z-Germany",
+      "server": "centauri.ceres.pics",
+      "server_port": 25017,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "centauri.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Z-India",
+      "server": "leonis.ceres.pics",
+      "server_port": 25018,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "leonis.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "v2ray-Z-Russia",
+      "server": "piscium.ceres.pics",
+      "server_port": 25020,
+      "type": "vmess",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "security": "auto",
+      "network": "tcp",
+      "alter_id": 2,
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "piscium.ceres.pics",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "剩余流量：1.06TB",
+      "server": "celeriuniversum.shop",
+      "server_port": 10086,
+      "type": "vless",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "tls": {
+        "enabled": true
+      }
+    },
+    {
+      "tag": "过期时间：2025-02-28",
+      "server": "celeriuniversum.shop",
+      "server_port": 10086,
+      "type": "vless",
+      "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
+      "tls": {
+        "enabled": true
+      }
+    }
+  ],
+  "route": {
+    "rule_set": [
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-youtube",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-telegram",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geoip-telegram",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-category-media",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-media.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-openai",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-github",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-jetbrains",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/jetbrains.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-spotify",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-cloudflare",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cloudflare.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geoip-cloudflare",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cloudflare.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-google",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "GeoIP2-CN",
+        "url": "https://wiki.jokin.uk/cnip2.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-cn",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-icloud@cn",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/icloud@cn.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-apple@cn",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-microsoft@cn",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft@cn.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "Proxy",
+        "tag": "geosite-category-ads-all",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs"
+      }
+    ],
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": "stun"
+          }
+        ],
+        "outbound": "block"
+      },
+      {
+        "domain_suffix": [
+          "edu.cn",
+          "gov.cn",
+          "mil.cn",
+          "ac.cn",
+          "com.cn",
+          "net.cn",
+          "org.cn",
+          "中国",
+          "中國"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "Proxy"
+      },
+      {
+        "rule_set": "geosite-youtube",
+        "outbound": "Youtube"
+      },
+      {
+        "rule_set": "geosite-telegram",
+        "outbound": "Telegram"
+      },
+      {
+        "rule_set": "geoip-telegram",
+        "outbound": "Telegram"
+      },
+      {
+        "rule_set": "geosite-category-media",
+        "outbound": "Category-media"
+      },
+      {
+        "rule_set": "geosite-openai",
+        "outbound": "Openai"
+      },
+      {
+        "rule_set": "geosite-github",
+        "outbound": "Github"
+      },
+      {
+        "rule_set": "geosite-jetbrains",
+        "outbound": "Jetbrains"
+      },
+      {
+        "rule_set": "geosite-spotify",
+        "outbound": "Spotify"
+      },
+      {
+        "rule_set": "geosite-cloudflare",
+        "outbound": "Cloudflare"
+      },
+      {
+        "rule_set": "geoip-cloudflare",
+        "outbound": "Cloudflare"
+      },
+      {
+        "rule_set": "geosite-google",
+        "outbound": "Google"
+      },
+      {
+        "rule_set": [
+          "GeoIP2-CN",
+          "geosite-cn",
+          "geosite-icloud@cn",
+          "geosite-apple@cn",
+          "geosite-microsoft@cn"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "Proxy"
+  }
+}
