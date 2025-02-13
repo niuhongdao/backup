@@ -1,47 +1,25 @@
 {
   "log": {
     "disabled": false,
-    "level": "debug",
-    "output": "",
-    "timestamp": false
+    "level": "info",
+    "timestamp": true
   },
+  
   "experimental": {
-    "clash_api": {
-      "external_controller": "127.0.0.1:20123",
-      "external_ui": "",
-      "external_ui_download_url": "",
-      "external_ui_download_detour": "🎯 全球直连",
-      "secret": "ID_5od0g27s",
-      "default_mode": "rule",
-      "access_control_allow_origin": [
-        "*"
-      ],
-      "access_control_allow_private_network": false
-    },
-    "cache_file": {
-      "enabled": true,
-      "path": "cache.db",
-      "cache_id": "",
-      "store_fakeip": true,
-      "store_rdrc": true,
-      "rdrc_timeout": "7d"
+  "cache_file": {
+    "enabled": true
     }
   },
+  
   "inbounds": [
     {
       "type": "tun",
-      "tag": "tun-in",
-      "interface_name": "",
-      "address": [
-        "172.18.0.1/30"
-      ],
+      "address": "172.19.0.1/30",
       "mtu": 9000,
-      "auto_route": true,
-      "strict_route": true,
-      "endpoint_independent_nat": false,
-      "stack": "system"
+      "auto_route": true
     }
   ],
+
   "outbounds": [
     {
       "type": "selector",
@@ -75,11 +53,11 @@
       "interrupt_exist_connections": true,
       "outbounds": [
         "🇭🇰 香港节点",
-        "🚀 节点选择",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
         "🇹🇼 台湾节点",
-        "🇺🇲 美国节点"
+        "🇺🇲 美国节点",
+        "🚀 节点选择"
       ]
     },
     {
@@ -1021,7 +999,7 @@
       {
         "action": "route",
         "rule_set": [
-          "geosite-google"
+          "geosite-google", "geoip-google"
         ],
         "outbound": "🍀 Google"
       },
@@ -1049,7 +1027,7 @@
       {
         "action": "route",
         "rule_set": [
-          "geoip-netflix"
+        "geosite-netflix", "geoip-netflix"
         ],
         "outbound": "🎥 Netflix"
       },
@@ -1147,6 +1125,13 @@
         "download_detour": "🎯 全球直连"
       },
       {
+        "tag": "geoip-google",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
         "tag": "geosite-onedrive",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
@@ -1164,6 +1149,13 @@
         "tag": "geosite-github",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-netflix",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
@@ -1191,35 +1183,35 @@
       {
         "tag": "GeoIP-Private",
         "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
       {
         "tag": "GeoSite-Private",
         "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
       {
         "tag": "GeoIP-CN",
         "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
       {
         "tag": "GeoSite-CN",
         "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
       {
         "tag": "GeoLocation-!CN",
         "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       }
@@ -1283,14 +1275,7 @@
         ]
       }
     ],
-    "fakeip": {
-      "enabled": false,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "disable_cache": false,
-    "disable_expire": false,
-    "independent_cache": false,
+    "strategy": "ipv4_only",
     "final": "Remote-DNS"
   }
 }
