@@ -386,7 +386,7 @@
       "server_port": 30001,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -400,7 +400,7 @@
       "server_port": 30002,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "monocerotis.weltknoten.xyz",
@@ -414,7 +414,7 @@
       "server_port": 30003,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "orionis.weltknoten.xyz",
@@ -428,7 +428,7 @@
       "server_port": 30004,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "phoenicis.weltknoten.xyz",
@@ -442,7 +442,7 @@
       "server_port": 30020,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "scorpii.weltknoten.xyz",
@@ -456,7 +456,7 @@
       "server_port": 30021,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -470,7 +470,7 @@
       "server_port": 30022,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "monocerotis.weltknoten.xyz",
@@ -484,7 +484,7 @@
       "server_port": 30023,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "orionis.weltknoten.xyz",
@@ -498,7 +498,7 @@
       "server_port": 30005,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "phoenicis.weltknoten.xyz",
@@ -512,7 +512,7 @@
       "server_port": 30006,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "scorpii.weltknoten.xyz",
@@ -526,7 +526,7 @@
       "server_port": 30024,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -540,7 +540,7 @@
       "server_port": 30007,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -554,7 +554,7 @@
       "server_port": 30008,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "monocerotis.weltknoten.xyz",
@@ -568,7 +568,7 @@
       "server_port": 30009,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "orionis.weltknoten.xyz",
@@ -582,7 +582,7 @@
       "server_port": 30010,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "orionis.weltknoten.xyz",
@@ -596,7 +596,7 @@
       "server_port": 30011,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "phoenicis.weltknoten.xyz",
@@ -610,7 +610,7 @@
       "server_port": 30012,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "scorpii.weltknoten.xyz",
@@ -624,7 +624,7 @@
       "server_port": 30013,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -638,7 +638,7 @@
       "server_port": 30014,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "monocerotis.weltknoten.xyz",
@@ -652,7 +652,7 @@
       "server_port": 30018,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "orionis.weltknoten.xyz",
@@ -666,7 +666,7 @@
       "server_port": 30015,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "phoenicis.weltknoten.xyz",
@@ -680,7 +680,7 @@
       "server_port": 30017,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "scorpii.weltknoten.xyz",
@@ -694,7 +694,7 @@
       "server_port": 30016,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -708,7 +708,7 @@
       "server_port": 30019,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "andromedae.weltknoten.xyz",
@@ -722,7 +722,7 @@
       "server_port": 25021,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "aquaril.ceres.pics",
@@ -736,7 +736,7 @@
       "server_port": 25025,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "centauri.ceres.pics",
@@ -750,7 +750,7 @@
       "server_port": 25022,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "leonis.ceres.pics",
@@ -764,7 +764,7 @@
       "server_port": 25026,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "ophiuchi.ceres.pics",
@@ -778,7 +778,7 @@
       "server_port": 25023,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "piscium.ceres.pics",
@@ -792,7 +792,7 @@
       "server_port": 25027,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "aquaril.ceres.pics",
@@ -806,7 +806,7 @@
       "server_port": 25024,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "centauri.ceres.pics",
@@ -820,7 +820,7 @@
       "server_port": 25012,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "leonis.ceres.pics",
@@ -834,7 +834,7 @@
       "server_port": 25013,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "ophiuchi.ceres.pics",
@@ -848,7 +848,7 @@
       "server_port": 25014,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "piscium.ceres.pics",
@@ -862,7 +862,7 @@
       "server_port": 25015,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "piscium.ceres.pics",
@@ -876,7 +876,7 @@
       "server_port": 25006,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "aquaril.ceres.pics",
@@ -890,7 +890,7 @@
       "server_port": 25007,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "centauri.ceres.pics",
@@ -904,7 +904,7 @@
       "server_port": 25008,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "leonis.ceres.pics",
@@ -918,7 +918,7 @@
       "server_port": 25009,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "ophiuchi.ceres.pics",
@@ -932,7 +932,7 @@
       "server_port": 25016,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "piscium.ceres.pics",
@@ -946,7 +946,7 @@
       "server_port": 25019,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "aquaril.ceres.pics",
@@ -960,7 +960,7 @@
       "server_port": 25017,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "centauri.ceres.pics",
@@ -974,7 +974,7 @@
       "server_port": 25018,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "leonis.ceres.pics",
@@ -988,7 +988,7 @@
       "server_port": 25020,
       "uuid": "caef05d3-80c4-39ab-b669-72beb8106676",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "tls": {
         "enabled": true,
         "server_name": "piscium.ceres.pics",
