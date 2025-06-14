@@ -1178,7 +1178,7 @@
       {
         "tag": "geoip-telegram",
         "type": "remote",
-        "url": "url\": \"https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
@@ -1262,7 +1262,7 @@
       {
         "tag": "GeoSite-CN",
         "type": "remote",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geo/geosite/cn.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
