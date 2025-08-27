@@ -826,7 +826,7 @@
     {
       "tag": "🇸🇬 VIP-v2ray-Singapore 02",
       "type": "vmess",
-      "server": "mstrawberry.strawberrygs.xyz",
+      "server": "strawberry.strawberrygs.xyz",
       "server_port": 30008,
       "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
       "security": "auto",
