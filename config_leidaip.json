@@ -1041,59 +1041,59 @@
     "servers": [
       {
         "tag": "Local-DNS",
-        "type": "https",
-        "domain_resolver": "Local-DNS-Resolver",
-        "server": "223.5.5.5",
-        "path": "/dns-query"
+        "address": "https://223.5.5.5/dns-query",
+        "address_resolver": "Local-DNS-Resolver",
+        "detour": "🎯 全球直连"
       },
       {
         "tag": "Local-DNS-Resolver",
-        "type": "udp",
-        "server": "223.5.5.5"
+        "address": "223.5.5.5",
+        "detour": "🎯 全球直连"
       },
       {
         "tag": "Remote-DNS",
-        "type": "tls",
-        "detour": "🚀 节点选择",
-        "domain_resolver": "Remote-DNS-Resolver",
-        "server": "8.8.8.8"
+        "address": "tls://8.8.8.8",
+        "address_resolver": "Remote-DNS-Resolver",
+        "detour": "🚀 节点选择"
       },
       {
         "tag": "Remote-DNS-Resolver",
-        "type": "udp",
-        "detour": "🚀 节点选择",
-        "server": "8.8.8.8"
+        "address": "8.8.8.8",
+        "detour": "🚀 节点选择"
       }
     ],
-    "rules": [
+"rules": [
       {
         "action": "route",
-        "clash_mode": "direct",
-        "server": "Local-DNS"
+        "server": "Local-DNS",
+        "outbound": "any"
       },
       {
         "action": "route",
-        "clash_mode": "global",
-        "server": "Remote-DNS"
+        "server": "Local-DNS",
+        "clash_mode": "direct"
       },
       {
         "action": "route",
+        "server": "Remote-DNS",
+        "clash_mode": "global"
+      },
+      {
+        "action": "route",
+        "server": "Local-DNS",
         "rule_set": [
           "GeoSite-CN"
-        ],
-        "server": "Local-DNS"
+        ]
       },
       {
         "action": "route",
+        "server": "Remote-DNS",
         "rule_set": [
           "GeoLocation-!CN"
-        ],
-        "server": "Remote-DNS"
+        ]
       }
     ],
-    "disable_cache": false,
-    "disable_expire": false,
-    "independent_cache": false,
+    "strategy": "ipv4_only",
     "final": "Remote-DNS"
   }
 }
