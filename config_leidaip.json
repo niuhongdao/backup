@@ -1,0 +1,1119 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "external_ui_download_detour": "🎯 全球直连",
+      "secret": "ID_gjstooxy",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "",
+      "store_fakeip": true,
+      "store_rdrc": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "📹 YouTube",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2",
+        "🎈 自动选择"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🤖 OpenAI",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "👨‍💻 Github",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🪟 Microsoft",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🚀 节点选择"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🍀 Google",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🐬 OneDrive",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🚀 节点选择"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎵 TikTok",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🍏 Apple",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎥 Netflix",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "📲 Telegram",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🚀 节点选择",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "🎈 自动选择",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 ss(广移)香港1",
+        "🇭🇰 ss(广移)香港2",
+        "🇸🇬 ss(广移)新加坡 1",
+        "🇸🇬 ss(广移)新加坡 2",
+        "🇯🇵 ss(广移)日本1",
+        "🇯🇵 ss(广移)日本2",
+        "🇯🇵 ss(广移)日本4",
+        "🇯🇵 ss(广移)日本3",
+        "🇹🇼 ss(广移)台湾1",
+        "🇹🇼 ss(广移)台湾2",
+        "🇹🇼 ss(广移)台湾2-1",
+        "🇹🇼 ss(广移)台湾2-2",
+        "🇺🇸 ss(广移)美国1",
+        "🇺🇸 ss(广移)美国2",
+        "🇺🇸 ss(广移)美国2-1",
+        "🇺🇸 ss(广移)美国2-2",
+        "🇰🇷 ss(广移)韩国1",
+        "🇰🇷 ss(广移)韩国2",
+        "🇲🇾 ss(广移)马来西亚1",
+        "🇲🇾 ss(广移)马来西亚2",
+        "🇮🇱 ss(广移)以色列1",
+        "🇮🇱 ss(广移)以色列2",
+        "🇮🇳 ss(广移)印度1",
+        "🇮🇳 ss(广移)印度2",
+        "🇹🇷 ss(广移)土耳其1",
+        "🇹🇷 ss(广移)土耳其2",
+        "🇮🇸 ss(广移)冰岛1",
+        "🇮🇸 ss(广移)冰岛2",
+        "🇧🇷 ss(广移) 巴西1",
+        "🇧🇷 ss(广移)巴西2",
+        "🇲🇽 ss(广移)墨西哥1",
+        "🇲🇽 ss(广移)墨西哥2",
+        "🇹🇭 ss(广移)泰国1",
+        "🇹🇭 ss(广移)泰国2"
+      ]
+    },
+    {
+      "type": "direct",
+      "tag": "🎯 全球直连"
+    },
+    {
+      "type": "selector",
+      "tag": "🐟 漏网之鱼",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "GLOBAL",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🚀 节点选择",
+        "🎈 自动选择",
+        "🎯 全球直连",
+        "🐟 漏网之鱼"
+      ]
+    },
+    {
+      "tag": "🇭🇰 ss(广移)香港1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 34061,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇭🇰 ss(广移)香港2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 34061,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇸🇬 ss(广移)新加坡 1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 28063,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇸🇬 ss(广移)新加坡 2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 28063,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇯🇵 ss(广移)日本1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 10589,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇯🇵 ss(广移)日本2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 10589,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇯🇵 ss(广移)日本4",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 57927,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇯🇵 ss(广移)日本3",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 57927,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇼 ss(广移)台湾1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 18148,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇼 ss(广移)台湾2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 18148,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇼 ss(广移)台湾2-1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 43076,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇼 ss(广移)台湾2-2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 43076,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇺🇸 ss(广移)美国1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 46197,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇺🇸 ss(广移)美国2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 46197,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇺🇸 ss(广移)美国2-1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 12589,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇺🇸 ss(广移)美国2-2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 12589,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇰🇷 ss(广移)韩国1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 41431,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇰🇷 ss(广移)韩国2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 41431,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇲🇾 ss(广移)马来西亚1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 13828,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇲🇾 ss(广移)马来西亚2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 13828,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇮🇱 ss(广移)以色列1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 18140,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇮🇱 ss(广移)以色列2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 18140,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇮🇳 ss(广移)印度1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 34411,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇮🇳 ss(广移)印度2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 34411,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇷 ss(广移)土耳其1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 33744,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇷 ss(广移)土耳其2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 33744,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇮🇸 ss(广移)冰岛1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 18244,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇮🇸 ss(广移)冰岛2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 18244,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇧🇷 ss(广移) 巴西1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 55936,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇧🇷 ss(广移)巴西2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 55936,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇲🇽 ss(广移)墨西哥1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 20149,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇲🇽 ss(广移)墨西哥2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 20149,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇭 ss(广移)泰国1",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 39037,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    },
+    {
+      "tag": "🇹🇭 ss(广移)泰国2",
+      "type": "shadowsocks",
+      "server": "ldu.izenny.com",
+      "server_port": 39037,
+      "method": "chacha20-ietf-poly1305",
+      "password": "bf0fd389-06eb-444e-be9b-852d569a7331"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "📲 Telegram"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-netflix",
+          "geoip-netflix"
+        ],
+        "outbound": "🎥 Netflix"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geoip-apple"
+        ],
+        "outbound": "🍏 Apple"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "🎵 TikTok"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-onedrive"
+        ],
+        "outbound": "🐬 OneDrive"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-google",
+          "geoip-google"
+        ],
+        "outbound": "🍀 Google"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-microsoft"
+        ],
+        "outbound": "🪟 Microsoft"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "👨‍💻 Github"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-openai"
+        ],
+        "outbound": "🤖 OpenAI"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-youtube"
+        ],
+        "outbound": "📹 YouTube"
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "outbound": "GLOBAL"
+      },
+      {
+        "action": "reject",
+        "protocol": "quic"
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "Category-Ads"
+        ]
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-Private"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-CN"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-Private"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-CN"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoLocation-!CN"
+        ],
+        "outbound": "🚀 节点选择"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-apple",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-tiktok",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-netflix",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-netflix",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-github",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-apple",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-telegram",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-telegram",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-onedrive",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-google",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-google",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-openai",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-microsoft",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-youtube",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoIP-CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoSite-CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoLocation-!CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "🐟 漏网之鱼",
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Local-DNS",
+        "type": "https",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server": "223.5.5.5",
+        "path": "/dns-query"
+      },
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "udp",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "detour": "🚀 节点选择",
+        "domain_resolver": "Remote-DNS-Resolver",
+        "server": "8.8.8.8"
+      },
+      {
+        "tag": "Remote-DNS-Resolver",
+        "type": "udp",
+        "detour": "🚀 节点选择",
+        "server": "8.8.8.8"
+      }
+    ],
+    "rules": [
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "server": "Remote-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-CN"
+        ],
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoLocation-!CN"
+        ],
+        "server": "Remote-DNS"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS"
+  }
+}
