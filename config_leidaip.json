@@ -830,6 +830,10 @@
         "outbound": "📹 YouTube"
       },
       {
+        "action": "sniff",
+        "inbound": "tun-in"
+      },
+      {
         "action": "hijack-dns",
         "protocol": "dns"
       },
