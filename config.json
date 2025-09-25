@@ -305,8 +305,9 @@
         "v2ray-Z-Germany",
         "v2ray-Z-India",
         "v2ray-Z-Russia",
-        "剩余流量：1.29TB",
-        "过期时间：2026-02-28",
+        "🇱🇦 网站访问地址:  la.gsoula.life",
+        "🇬🇧 剩余流量：6.45GB",
+        "过期时间：2026-09-13",
         "🎈 自动选择"
       ]
     },
@@ -362,8 +363,9 @@
         "v2ray-Z-Germany",
         "v2ray-Z-India",
         "v2ray-Z-Russia",
-        "剩余流量：1.29TB",
-        "过期时间：2026-02-28"
+        "🇱🇦 网站访问地址:  la.gsoula.life",
+        "🇬🇧 剩余流量：6.45GB",
+        "过期时间：2026-09-13"
       ]
     },
     {
@@ -389,6 +391,62 @@
         "🎯 全球直连",
         "🐟 漏网之鱼"
       ]
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 01",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25021,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "aquaril.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 02",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25025,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "centauri.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 03",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25022,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "leonis.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 04",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25026,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "ophiuchi.ceres.pics",
+        "insecure": false
+      }
     },
     {
       "tag": "🇭🇰 v2ray-Hong Kong 05",
