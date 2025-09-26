@@ -1,0 +1,1305 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "output": "",
+    "timestamp": false
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:20123",
+      "external_ui": "",
+      "external_ui_download_url": "",
+      "external_ui_download_detour": "🎯 全球直连",
+      "secret": "ID_of67yuuc",
+      "default_mode": "rule",
+      "access_control_allow_origin": [
+        "*"
+      ],
+      "access_control_allow_private_network": false
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "",
+      "store_fakeip": true,
+      "store_rdrc": true,
+      "rdrc_timeout": "7d"
+    }
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "📹 YouTube",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🤖 OpenAI",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🍀 Google",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🪟 Microsoft",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "👨‍💻 Github",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🐬 OneDrive",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎥 Netflix",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🎵 TikTok",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 香港节点",
+        "🇸🇬 新加坡节点",
+        "🇯🇵 日本节点",
+        "🇹🇼 台湾节点",
+        "🇺🇲 美国节点"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "🇭🇰 香港节点",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 v2ray-Hong Kong 01",
+        "🇭🇰 v2ray-Hong Kong 02",
+        "🇭🇰 v2ray-Hong Kong 03",
+        "🇭🇰 v2ray-Hong Kong 04",
+        "🇭🇰 v2ray-Hong Kong 05",
+        "🇭🇰 VIP-v2ray-Hong Kong 01",
+        "🇭🇰 VIP-v2ray-Hong Kong 02",
+        "🇭🇰 VIP-v2ray-Hong Kong 03",
+        "🇭🇰 VIP-v2ray-Hong Kong 04",
+        "🇭🇰 VIP-v2ray-Hong Kong 05",
+        "🇭🇰 VIP-v2ray-Hong Kong 06",
+        "🇭🇰 VIP-v2ray-Hong Kong 07",
+        "🇭🇰 VIP-v2ray-Hong Kong 08"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🇸🇬 新加坡节点",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇸🇬 v2ray-Singapore 01",
+        "🇸🇬 v2ray-Singapore 02",
+        "🇸🇬 VIP-v2ray-Singapore 01",
+        "🇸🇬 VIP-v2ray-Singapore 02"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "🇯🇵 日本节点",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇯🇵 v2ray-Japan 01",
+        "🇯🇵 v2ray-Japan 02",
+        "🇯🇵 VIP-v2ray-Japan 01",
+        "🇯🇵 VIP-v2ray-Japan 02"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "🇹🇼 台湾节点",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇹🇼 v2ray-Taiwan 01",
+        "🇹🇼 v2ray-Taiwan 02",
+        "🇹🇼 VIP-v2ray-Taiwan 01",
+        "🇹🇼 VIP-v2ray-Taiwan 02"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🇺🇲 美国节点",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇺🇸 v2ray-United States 01",
+        "🇺🇸 v2ray-United States 02",
+        "🇺🇸 v2ray-United States 03",
+        "🇺🇸 v2ray-United States 04",
+        "🇺🇸 VIP-v2ray-United States 01",
+        "🇺🇸 VIP-v2ray-United States 02",
+        "🇺🇸 VIP-v2ray-United States 03",
+        "🇺🇸 VIP-v2ray-United States 04"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "🚀 节点选择",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🎈 自动选择",
+        "🇭🇰 v2ray-Hong Kong 01",
+        "🇭🇰 v2ray-Hong Kong 02",
+        "🇭🇰 v2ray-Hong Kong 03",
+        "🇭🇰 v2ray-Hong Kong 04",
+        "🇭🇰 v2ray-Hong Kong 05",
+        "🇯🇵 v2ray-Japan 01",
+        "🇯🇵 v2ray-Japan 02",
+        "🇸🇬 v2ray-Singapore 01",
+        "🇸🇬 v2ray-Singapore 02",
+        "🇹🇼 v2ray-Taiwan 01",
+        "🇹🇼 v2ray-Taiwan 02",
+        "🇺🇸 v2ray-United States 01",
+        "🇺🇸 v2ray-United States 02",
+        "🇺🇸 v2ray-United States 03",
+        "🇺🇸 v2ray-United States 04",
+        "🇨🇦 v2ray-Z-Canada",
+        "🇬🇧 v2ray-Z-England",
+        "🇩🇪 v2ray-Z-Germany",
+        "🇮🇳 v2ray-Z-India",
+        "🇷🇺 v2ray-Z-Russia",
+        "🇭🇰 VIP-v2ray-Hong Kong 01",
+        "🇭🇰 VIP-v2ray-Hong Kong 02",
+        "🇭🇰 VIP-v2ray-Hong Kong 03",
+        "🇭🇰 VIP-v2ray-Hong Kong 04",
+        "🇭🇰 VIP-v2ray-Hong Kong 05",
+        "🇭🇰 VIP-v2ray-Hong Kong 06",
+        "🇭🇰 VIP-v2ray-Hong Kong 07",
+        "🇭🇰 VIP-v2ray-Hong Kong 08",
+        "🇯🇵 VIP-v2ray-Japan 01",
+        "🇯🇵 VIP-v2ray-Japan 02",
+        "🇰🇷 VIP-v2ray-Korea",
+        "🇸🇬 VIP-v2ray-Singapore 01",
+        "🇸🇬 VIP-v2ray-Singapore 02",
+        "🇹🇼 VIP-v2ray-Taiwan 01",
+        "🇹🇼 VIP-v2ray-Taiwan 02",
+        "🇺🇸 VIP-v2ray-United States 01",
+        "🇺🇸 VIP-v2ray-United States 02",
+        "🇺🇸 VIP-v2ray-United States 03",
+        "🇺🇸 VIP-v2ray-United States 04",
+        "🇨🇦 VIP-v2ray-Z-Canada",
+        "🇬🇧 VIP-v2ray-Z-England",
+        "🇩🇪 VIP-v2ray-Z-Germany",
+        "🇮🇳 VIP-v2ray-Z-India",
+        "🇷🇺 VIP-v2ray-Z-Russia",
+        "🇱🇦 网站访问地址:  la.gsoula.life",
+        "🇬🇧 剩余流量：5.49GB",
+        "过期时间：2026-09-13"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "🎈 自动选择",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 150,
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🇭🇰 v2ray-Hong Kong 01",
+        "🇭🇰 v2ray-Hong Kong 02",
+        "🇭🇰 v2ray-Hong Kong 03",
+        "🇭🇰 v2ray-Hong Kong 04",
+        "🇭🇰 v2ray-Hong Kong 05",
+        "🇯🇵 v2ray-Japan 01",
+        "🇯🇵 v2ray-Japan 02",
+        "🇸🇬 v2ray-Singapore 01",
+        "🇸🇬 v2ray-Singapore 02",
+        "🇹🇼 v2ray-Taiwan 01",
+        "🇹🇼 v2ray-Taiwan 02",
+        "🇺🇸 v2ray-United States 01",
+        "🇺🇸 v2ray-United States 02",
+        "🇺🇸 v2ray-United States 03",
+        "🇺🇸 v2ray-United States 04",
+        "🇨🇦 v2ray-Z-Canada",
+        "🇬🇧 v2ray-Z-England",
+        "🇩🇪 v2ray-Z-Germany",
+        "🇮🇳 v2ray-Z-India",
+        "🇷🇺 v2ray-Z-Russia",
+        "🇭🇰 VIP-v2ray-Hong Kong 01",
+        "🇭🇰 VIP-v2ray-Hong Kong 02",
+        "🇭🇰 VIP-v2ray-Hong Kong 03",
+        "🇭🇰 VIP-v2ray-Hong Kong 04",
+        "🇭🇰 VIP-v2ray-Hong Kong 05",
+        "🇭🇰 VIP-v2ray-Hong Kong 06",
+        "🇭🇰 VIP-v2ray-Hong Kong 07",
+        "🇭🇰 VIP-v2ray-Hong Kong 08",
+        "🇯🇵 VIP-v2ray-Japan 01",
+        "🇯🇵 VIP-v2ray-Japan 02",
+        "🇰🇷 VIP-v2ray-Korea",
+        "🇸🇬 VIP-v2ray-Singapore 01",
+        "🇸🇬 VIP-v2ray-Singapore 02",
+        "🇹🇼 VIP-v2ray-Taiwan 01",
+        "🇹🇼 VIP-v2ray-Taiwan 02",
+        "🇺🇸 VIP-v2ray-United States 01",
+        "🇺🇸 VIP-v2ray-United States 02",
+        "🇺🇸 VIP-v2ray-United States 03",
+        "🇺🇸 VIP-v2ray-United States 04",
+        "🇨🇦 VIP-v2ray-Z-Canada",
+        "🇬🇧 VIP-v2ray-Z-England",
+        "🇩🇪 VIP-v2ray-Z-Germany",
+        "🇮🇳 VIP-v2ray-Z-India",
+        "🇷🇺 VIP-v2ray-Z-Russia",
+        "🇱🇦 网站访问地址:  la.gsoula.life",
+        "🇬🇧 剩余流量：5.49GB",
+        "过期时间：2026-09-13"
+      ]
+    },
+    {
+      "type": "direct",
+      "tag": "🎯 全球直连"
+    },
+    {
+      "type": "selector",
+      "tag": "🐟 漏网之鱼",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "type": "selector",
+      "tag": "GLOBAL",
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "🚀 节点选择",
+        "🎈 自动选择",
+        "🎯 全球直连",
+        "🐟 漏网之鱼"
+      ]
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 01",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25021,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "aquaril.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 02",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25025,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "centauri.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 03",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25022,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "leonis.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 04",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25026,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "ophiuchi.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 v2ray-Hong Kong 05",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25023,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "piscium.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 v2ray-Japan 01",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25027,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "aquaril.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 v2ray-Japan 02",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25024,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "centauri.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇬 v2ray-Singapore 01",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25012,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "leonis.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇬 v2ray-Singapore 02",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25013,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "ophiuchi.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇹🇼 v2ray-Taiwan 01",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25014,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "piscium.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇹🇼 v2ray-Taiwan 02",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25015,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "piscium.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 v2ray-United States 01",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25006,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "aquaril.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 v2ray-United States 02",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25007,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "centauri.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 v2ray-United States 03",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25008,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "leonis.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 v2ray-United States 04",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25009,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "ophiuchi.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇨🇦 v2ray-Z-Canada",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25016,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "piscium.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇬🇧 v2ray-Z-England",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25019,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "aquaril.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇩🇪 v2ray-Z-Germany",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25017,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "centauri.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇮🇳 v2ray-Z-India",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25018,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "leonis.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇷🇺 v2ray-Z-Russia",
+      "type": "vmess",
+      "server": "rouge.rougerouge.cloud",
+      "server_port": 25020,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "piscium.ceres.pics",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 01",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30001,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 02",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30002,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 03",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30003,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "orionis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 04",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30004,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 05",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30020,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "scorpii.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 06",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30021,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 07",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30022,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 VIP-v2ray-Hong Kong 08",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30023,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "orionis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 VIP-v2ray-Japan 01",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30005,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 VIP-v2ray-Japan 02",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30006,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "scorpii.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇰🇷 VIP-v2ray-Korea",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30024,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇬 VIP-v2ray-Singapore 01",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30007,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇸🇬 VIP-v2ray-Singapore 02",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30008,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇹🇼 VIP-v2ray-Taiwan 01",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30009,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "orionis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇹🇼 VIP-v2ray-Taiwan 02",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30010,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "orionis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 VIP-v2ray-United States 01",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30011,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 VIP-v2ray-United States 02",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30012,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "scorpii.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 VIP-v2ray-United States 03",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30013,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 VIP-v2ray-United States 04",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30014,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "monocerotis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇨🇦 VIP-v2ray-Z-Canada",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30018,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "orionis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇬🇧 VIP-v2ray-Z-England",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30015,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "phoenicis.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇩🇪 VIP-v2ray-Z-Germany",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30017,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "scorpii.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇮🇳 VIP-v2ray-Z-India",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30016,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇷🇺 VIP-v2ray-Z-Russia",
+      "type": "vmess",
+      "server": "noir.noirnoir.cloud",
+      "server_port": 30019,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "andromedae.weltknoten.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇱🇦 网站访问地址:  la.gsoula.life",
+      "type": "vmess",
+      "server": "1.1.1.1",
+      "server_port": 60000,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "1.1.1.1",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇬🇧 剩余流量：5.49GB",
+      "type": "vless",
+      "server": "celeriuniversum.shop",
+      "server_port": 10086,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32"
+    },
+    {
+      "tag": "过期时间：2026-09-13",
+      "type": "vless",
+      "server": "celeriuniversum.shop",
+      "server_port": 10086,
+      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "🎵 TikTok"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geoip-netflix",
+          "geosite-netflix"
+        ],
+        "outbound": "🎥 Netflix"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-onedrive"
+        ],
+        "outbound": "🐬 OneDrive"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "👨‍💻 Github"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-microsoft"
+        ],
+        "outbound": "🪟 Microsoft"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geoip-google",
+          "geosite-google"
+        ],
+        "outbound": "🍀 Google"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-openai"
+        ],
+        "outbound": "🤖 OpenAI"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "geosite-youtube"
+        ],
+        "outbound": "📹 YouTube"
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "outbound": "GLOBAL"
+      },
+      {
+        "action": "reject",
+        "protocol": "quic"
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "Category-Ads"
+        ]
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-Private"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-CN"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-Private"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoIP-CN"
+        ],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoLocation-!CN"
+        ],
+        "outbound": "🚀 节点选择"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-youtube",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-microsoft",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-openai",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-google",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-google",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-onedrive",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-telegram",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-github",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geoip-netflix",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-netflix",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-tiktok",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "Category-Ads",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoIP-Private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoSite-Private",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoIP-CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoSite-CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "GeoLocation-!CN",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "🐟 漏网之鱼",
+    "default_domain_resolver": {
+      "server": "Local-DNS"
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "Local-DNS",
+        "type": "https",
+        "domain_resolver": "Local-DNS-Resolver",
+        "server_port": 443,
+        "server": "223.5.5.5",
+        "path": "/dns-query"
+      },
+      {
+        "tag": "Local-DNS-Resolver",
+        "type": "udp",
+        "server_port": 53,
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "Remote-DNS",
+        "type": "tls",
+        "detour": "🚀 节点选择",
+        "domain_resolver": "Remote-DNS-Resolver",
+        "server_port": 853,
+        "server": "8.8.8.8"
+      },
+      {
+        "tag": "Remote-DNS-Resolver",
+        "type": "udp",
+        "detour": "🚀 节点选择",
+        "server_port": 53,
+        "server": "8.8.8.8"
+      }
+    ],
+    "rules": [
+      {
+        "action": "route",
+        "clash_mode": "direct",
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "clash_mode": "global",
+        "server": "Remote-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoSite-CN"
+        ],
+        "server": "Local-DNS"
+      },
+      {
+        "action": "route",
+        "rule_set": [
+          "GeoLocation-!CN"
+        ],
+        "server": "Remote-DNS"
+      }
+    ],
+    "disable_cache": false,
+    "disable_expire": false,
+    "independent_cache": false,
+    "final": "Remote-DNS"
+  }
+}
