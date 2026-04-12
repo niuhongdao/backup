@@ -170,19 +170,14 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇭🇰 VIP-v2ray-Hong Kong 01",
-        "🇭🇰 VIP-v2ray-Hong Kong 02",
-        "🇭🇰 VIP-v2ray-Hong Kong 03",
-        "🇭🇰 VIP-v2ray-Hong Kong 04",
-        "🇭🇰 VIP-v2ray-Hong Kong 05",
-        "🇭🇰 VIP-v2ray-Hong Kong 06",
-        "🇭🇰 VIP-v2ray-Hong Kong 07",
-        "🇭🇰 VIP-v2ray-Hong Kong 08",
-        "🇭🇰 v2ray-Hong Kong 01",
-        "🇭🇰 v2ray-Hong Kong 02",
-        "🇭🇰 v2ray-Hong Kong 03",
-        "🇭🇰 v2ray-Hong Kong 04",
-        "🇭🇰 v2ray-Hong Kong 05"
+        "🇭🇰 VIP-07-Hong Kong-Trojan",
+        "🇭🇰 VIP-08-Hong Kong-Trojan",
+        "🇭🇰 VIP-09-Hong Kong-Trojan",
+        "🇭🇰 VIP-10-Hong Kong-Trojan",
+        "🇭🇰 VIP-11-Hong Kong-Trojan",
+        "🇭🇰 VIP-12-Hong Kong-Trojan",
+        "🇭🇰 VIP-13-Hong Kong-Trojan",
+        "🇭🇰 VIP-14-Hong Kong-Trojan"
       ]
     },
     {
@@ -193,10 +188,9 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇯🇵 VIP-v2ray-Japan 01",
-        "🇯🇵 VIP-v2ray-Japan 02",
-        "🇯🇵 v2ray-Japan 01",
-        "🇯🇵 v2ray-Japan 02"
+         "🇯🇵 VIP-18-Japan-Trojan",
+        "🇯🇵 VIP-19-Japan-Trojan",
+        "🇯🇵 VIP-20-Japan-Trojan"
       ]
     },
     {
@@ -207,10 +201,9 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇸🇬 VIP-v2ray-Singapore 01",
-        "🇸🇬 VIP-v2ray-Singapore 02",
-        "🇸🇬 v2ray-Singapore 01",
-        "🇸🇬 v2ray-Singapore 02"
+        "🇸🇬 VIP-15-Singapore-Trojan",
+        "🇸🇬 VIP-16-Singapore-Trojan",
+        "🇸🇬 VIP-17-Singapore-Trojan"
       ]
     },
     {
@@ -221,10 +214,8 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇹🇼 VIP-v2ray-Taiwan 01",
-        "🇹🇼 VIP-v2ray-Taiwan 02",
-        "🇹🇼 v2ray-Taiwan 01",
-        "🇹🇼 v2ray-Taiwan 02"
+        "🇹🇼 VIP-21-Taiwan-Trojan",
+        "🇹🇼 VIP-22-Taiwan-Trojan"
       ]
     },
     {
@@ -235,14 +226,11 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇺🇸 v2ray-United States 01",
-        "🇺🇸 v2ray-United States 02",
-        "🇺🇸 v2ray-United States 03",
-        "🇺🇸 v2ray-United States 04",
-        "🇺🇸 VIP-v2ray-United States 01",
-        "🇺🇸 VIP-v2ray-United States 02",
-        "🇺🇸 VIP-v2ray-United States 03",
-        "🇺🇸 VIP-v2ray-United States 04"
+        "🇺🇸 VIP-01-United States-Trojan",
+        "🇺🇸 VIP-02-United States-Trojan",
+        "🇺🇸 VIP-03-United States-Trojan",
+        "🇺🇸 VIP-05-United States-Trojan",
+        "🇺🇸 VIP-06-United States-Trojan"
       ]
     },
     {
@@ -250,50 +238,34 @@
       "tag": "🚀 节点选择",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇭🇰 v2ray-Hong Kong 01",
-        "🇭🇰 v2ray-Hong Kong 02",
-        "🇭🇰 v2ray-Hong Kong 03",
-        "🇭🇰 v2ray-Hong Kong 04",
-        "🇭🇰 v2ray-Hong Kong 05",
-        "🇯🇵 v2ray-Japan 01",
-        "🇯🇵 v2ray-Japan 02",
-        "🇸🇬 v2ray-Singapore 01",
-        "🇸🇬 v2ray-Singapore 02",
-        "🇹🇼 v2ray-Taiwan 01",
-        "🇹🇼 v2ray-Taiwan 02",
-        "🇺🇸 v2ray-United States 01",
-        "🇺🇸 v2ray-United States 02",
-        "🇺🇸 v2ray-United States 03",
-        "🇺🇸 v2ray-United States 04",
-        "🇨🇦 v2ray-Z-Canada",
-        "🇬🇧 v2ray-Z-England",
-        "🇩🇪 v2ray-Z-Germany",
-        "🇮🇳 v2ray-Z-India",
-        "🇷🇺 v2ray-Z-Russia",
-        "🇭🇰 VIP-v2ray-Hong Kong 01",
-        "🇭🇰 VIP-v2ray-Hong Kong 02",
-        "🇭🇰 VIP-v2ray-Hong Kong 03",
-        "🇭🇰 VIP-v2ray-Hong Kong 04",
-        "🇭🇰 VIP-v2ray-Hong Kong 05",
-        "🇭🇰 VIP-v2ray-Hong Kong 06",
-        "🇭🇰 VIP-v2ray-Hong Kong 07",
-        "🇭🇰 VIP-v2ray-Hong Kong 08",
-        "🇯🇵 VIP-v2ray-Japan 01",
-        "🇯🇵 VIP-v2ray-Japan 02",
-        "🇰🇷 VIP-v2ray-Korea",
-        "🇸🇬 VIP-v2ray-Singapore 01",
-        "🇸🇬 VIP-v2ray-Singapore 02",
-        "🇹🇼 VIP-v2ray-Taiwan 01",
-        "🇹🇼 VIP-v2ray-Taiwan 02",
-        "🇺🇸 VIP-v2ray-United States 01",
-        "🇺🇸 VIP-v2ray-United States 02",
-        "🇺🇸 VIP-v2ray-United States 03",
-        "🇺🇸 VIP-v2ray-United States 04",
-        "🇨🇦 VIP-v2ray-Z-Canada",
-        "🇬🇧 VIP-v2ray-Z-England",
-        "🇩🇪 VIP-v2ray-Z-Germany",
-        "🇮🇳 VIP-v2ray-Z-India",
-        "🇷🇺 VIP-v2ray-Z-Russia",
+        "🇺🇸 VIP-01-United States-Trojan",
+        "🇺🇸 VIP-02-United States-Trojan",
+        "🇺🇸 VIP-03-United States-Trojan",
+        "🇦🇹 VIP-04-United State-Trojan",
+        "🇺🇸 VIP-05-United States-Trojan",
+        "🇺🇸 VIP-06-United States-Trojan",
+        "🇭🇰 VIP-07-Hong Kong-Trojan",
+        "🇭🇰 VIP-08-Hong Kong-Trojan",
+        "🇭🇰 VIP-09-Hong Kong-Trojan",
+        "🇭🇰 VIP-10-Hong Kong-Trojan",
+        "🇭🇰 VIP-11-Hong Kong-Trojan",
+        "🇭🇰 VIP-12-Hong Kong-Trojan",
+        "🇭🇰 VIP-13-Hong Kong-Trojan",
+        "🇭🇰 VIP-14-Hong Kong-Trojan",
+        "🇸🇬 VIP-15-Singapore-Trojan",
+        "🇸🇬 VIP-16-Singapore-Trojan",
+        "🇸🇬 VIP-17-Singapore-Trojan",
+        "🇯🇵 VIP-18-Japan-Trojan",
+        "🇯🇵 VIP-19-Japan-Trojan",
+        "🇯🇵 VIP-20-Japan-Trojan",
+        "🇹🇼 VIP-21-Taiwan-Trojan",
+        "🇹🇼 VIP-22-Taiwan-Trojan",
+        "🇰🇷 VIP-23-Korea-Trojan",
+        "🇨🇦 VIP-24-Canada-Trojan",
+        "🇬🇧 VIP-25-England-Trojan",
+        "🇩🇪 VIP-26-Germany-Trojan",
+        "🇷🇺 VIP-27-Russia-Trojan",
+        "🇮🇳 VIP-28-India-Trojan",
         "🎈 自动选择"
       ]
     },
@@ -305,50 +277,34 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇭🇰 v2ray-Hong Kong 01",
-        "🇭🇰 v2ray-Hong Kong 02",
-        "🇭🇰 v2ray-Hong Kong 03",
-        "🇭🇰 v2ray-Hong Kong 04",
-        "🇭🇰 v2ray-Hong Kong 05",
-        "🇯🇵 v2ray-Japan 01",
-        "🇯🇵 v2ray-Japan 02",
-        "🇸🇬 v2ray-Singapore 01",
-        "🇸🇬 v2ray-Singapore 02",
-        "🇹🇼 v2ray-Taiwan 01",
-        "🇹🇼 v2ray-Taiwan 02",
-        "🇺🇸 v2ray-United States 01",
-        "🇺🇸 v2ray-United States 02",
-        "🇺🇸 v2ray-United States 03",
-        "🇺🇸 v2ray-United States 04",
-        "🇨🇦 v2ray-Z-Canada",
-        "🇬🇧 v2ray-Z-England",
-        "🇩🇪 v2ray-Z-Germany",
-        "🇮🇳 v2ray-Z-India",
-        "🇷🇺 v2ray-Z-Russia",
-        "🇭🇰 VIP-v2ray-Hong Kong 01",
-        "🇭🇰 VIP-v2ray-Hong Kong 02",
-        "🇭🇰 VIP-v2ray-Hong Kong 03",
-        "🇭🇰 VIP-v2ray-Hong Kong 04",
-        "🇭🇰 VIP-v2ray-Hong Kong 05",
-        "🇭🇰 VIP-v2ray-Hong Kong 06",
-        "🇭🇰 VIP-v2ray-Hong Kong 07",
-        "🇭🇰 VIP-v2ray-Hong Kong 08",
-        "🇯🇵 VIP-v2ray-Japan 01",
-        "🇯🇵 VIP-v2ray-Japan 02",
-        "🇰🇷 VIP-v2ray-Korea",
-        "🇸🇬 VIP-v2ray-Singapore 01",
-        "🇸🇬 VIP-v2ray-Singapore 02",
-        "🇹🇼 VIP-v2ray-Taiwan 01",
-        "🇹🇼 VIP-v2ray-Taiwan 02",
-        "🇺🇸 VIP-v2ray-United States 01",
-        "🇺🇸 VIP-v2ray-United States 02",
-        "🇺🇸 VIP-v2ray-United States 03",
-        "🇺🇸 VIP-v2ray-United States 04",
-        "🇨🇦 VIP-v2ray-Z-Canada",
-        "🇬🇧 VIP-v2ray-Z-England",
-        "🇩🇪 VIP-v2ray-Z-Germany",
-        "🇮🇳 VIP-v2ray-Z-India",
-        "🇷🇺 VIP-v2ray-Z-Russia"
+        "🇺🇸 VIP-01-United States-Trojan",
+        "🇺🇸 VIP-02-United States-Trojan",
+        "🇺🇸 VIP-03-United States-Trojan",
+        "🇦🇹 VIP-04-United State-Trojan",
+        "🇺🇸 VIP-05-United States-Trojan",
+        "🇺🇸 VIP-06-United States-Trojan",
+        "🇭🇰 VIP-07-Hong Kong-Trojan",
+        "🇭🇰 VIP-08-Hong Kong-Trojan",
+        "🇭🇰 VIP-09-Hong Kong-Trojan",
+        "🇭🇰 VIP-10-Hong Kong-Trojan",
+        "🇭🇰 VIP-11-Hong Kong-Trojan",
+        "🇭🇰 VIP-12-Hong Kong-Trojan",
+        "🇭🇰 VIP-13-Hong Kong-Trojan",
+        "🇭🇰 VIP-14-Hong Kong-Trojan",
+        "🇸🇬 VIP-15-Singapore-Trojan",
+        "🇸🇬 VIP-16-Singapore-Trojan",
+        "🇸🇬 VIP-17-Singapore-Trojan",
+        "🇯🇵 VIP-18-Japan-Trojan",
+        "🇯🇵 VIP-19-Japan-Trojan",
+        "🇯🇵 VIP-20-Japan-Trojan",
+        "🇹🇼 VIP-21-Taiwan-Trojan",
+        "🇹🇼 VIP-22-Taiwan-Trojan",
+        "🇰🇷 VIP-23-Korea-Trojan",
+        "🇨🇦 VIP-24-Canada-Trojan",
+        "🇬🇧 VIP-25-England-Trojan",
+        "🇩🇪 VIP-26-Germany-Trojan",
+        "🇷🇺 VIP-27-Russia-Trojan",
+        "🇮🇳 VIP-28-India-Trojan"
       ]
     },
     {
@@ -375,401 +331,341 @@
         "🐟 漏网之鱼"
       ]
     },
-       {
-      "tag": "🇭🇰 v2ray-Hong Kong 01",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25021,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      {
+      "tag": "🇺🇸 VIP-01-United States-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24433,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "un100.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 v2ray-Hong Kong 02",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25025,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇺🇸 VIP-02-United States-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24434,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "un101.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 v2ray-Hong Kong 03",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25022,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇺🇸 VIP-03-United States-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24435,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "un102.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 v2ray-Hong Kong 04",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25026,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇦🇹 VIP-04-United State-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24436,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "un103.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 v2ray-Hong Kong 05",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25023,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇺🇸 VIP-05-United States-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24437,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "un104.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇯🇵 v2ray-Japan 01",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25027,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇺🇸 VIP-06-United States-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24438,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "un105.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇯🇵 v2ray-Japan 02",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25024,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-07-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34441,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇸🇬 v2ray-Singapore 01",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25012,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-08-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34434,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh2.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇸🇬 v2ray-Singapore 02",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25013,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-09-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34435,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh3.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇹🇼 v2ray-Taiwan 01",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25014,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-10-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34436,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh4.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇹🇼 v2ray-Taiwan 02",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25015,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-11-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34437,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh5.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇺🇸 v2ray-United States 01",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25006,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-12-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34438,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh6.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇺🇸 v2ray-United States 02",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25007,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-13-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34439,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh7.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇺🇸 v2ray-United States 03",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25008,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇭🇰 VIP-14-Hong Kong-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34440,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh8.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇺🇸 v2ray-United States 04",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25009,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇸🇬 VIP-15-Singapore-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34460,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gg1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇨🇦 v2ray-Z-Canada",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25016,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇸🇬 VIP-16-Singapore-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34461,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gg2.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇬🇧 v2ray-Z-England",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25019,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇸🇬 VIP-17-Singapore-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34462,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gg3.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇩🇪 v2ray-Z-Germany",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25017,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇯🇵 VIP-18-Japan-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34470,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gj1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇮🇳 v2ray-Z-India",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25018,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇯🇵 VIP-19-Japan-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34471,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gj2.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇷🇺 v2ray-Z-Russia",
-      "type": "vmess",
-      "server": "rouge.rougerouge.cloud",
-      "server_port": 25020,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇯🇵 VIP-20-Japan-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34472,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gj3.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 01",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30001,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇹🇼 VIP-21-Taiwan-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34450,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "tt1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 02",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30002,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇹🇼 VIP-22-Taiwan-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34451,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "tt2.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 03",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30003,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇰🇷 VIP-23-Korea-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 34480,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gk1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 04",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30004,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇨🇦 VIP-24-Canada-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24450,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gc1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 05",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30020,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇬🇧 VIP-25-England-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24451,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gb1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 06",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30021,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇩🇪 VIP-26-Germany-Trojan",
+      "type": "trojan",
+      "server": "adau.sonofthewinds.com",
+      "server_port": 24452,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gd1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 07",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30022,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇷🇺 VIP-27-Russia-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 24454,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gr1.sonofthewinds.com",
+        "insecure": false
+      }
     },
     {
-      "tag": "🇭🇰 VIP-v2ray-Hong Kong 08",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30023,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇯🇵 VIP-v2ray-Japan 01",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30005,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇯🇵 VIP-v2ray-Japan 02",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30006,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇰🇷 VIP-v2ray-Korea",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30024,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇸🇬 VIP-v2ray-Singapore 01",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30007,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇸🇬 VIP-v2ray-Singapore 02",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30008,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇹🇼 VIP-v2ray-Taiwan 01",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30009,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇹🇼 VIP-v2ray-Taiwan 02",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30010,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇺🇸 VIP-v2ray-United States 01",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30011,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇺🇸 VIP-v2ray-United States 02",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30012,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇺🇸 VIP-v2ray-United States 03",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30013,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇺🇸 VIP-v2ray-United States 04",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30014,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇨🇦 VIP-v2ray-Z-Canada",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30018,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇬🇧 VIP-v2ray-Z-England",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30015,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇩🇪 VIP-v2ray-Z-Germany",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30017,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇮🇳 VIP-v2ray-Z-India",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30016,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇷🇺 VIP-v2ray-Z-Russia",
-      "type": "vmess",
-      "server": "noir.noirnoir.cloud",
-      "server_port": 30019,
-      "uuid": "825929f4-c702-35ce-9124-00d3f95b8c32",
-      "security": "auto",
-      "alter_id": 0
+      "tag": "🇮🇳 VIP-28-India-Trojan",
+      "type": "trojan",
+      "server": "adak.sonofthewinds.com",
+      "server_port": 24453,
+      "password": "825929f4-c702-35ce-9124-00d3f95b8c32",
+      "tls": {
+        "enabled": true,
+        "server_name": "gi1.sonofthewinds.com",
+        "insecure": false
+      }
     }
   ],
   "route": {
