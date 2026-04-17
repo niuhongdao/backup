@@ -188,7 +188,7 @@
       "tolerance": 150,
       "interrupt_exist_connections": true,
       "outbounds": [
-         "🇯🇵 VIP-18-Japan-Trojan",
+        "🇯🇵 VIP-18-Japan-Trojan",
         "🇯🇵 VIP-19-Japan-Trojan",
         "🇯🇵 VIP-20-Japan-Trojan"
       ]
@@ -331,7 +331,7 @@
         "🐟 漏网之鱼"
       ]
     },
-      {
+    {
       "tag": "🇺🇸 VIP-01-United States-Trojan",
       "type": "trojan",
       "server": "adau.sonofthewinds.com",
