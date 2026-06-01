@@ -638,6 +638,7 @@
         "action": "route",
         "rule_set": [
           "OpenAI",
+          "google-gemini",
           "Copilot"
         ],
         "outbound": "🤖 OpenAI"
@@ -763,6 +764,13 @@
         "tag": "Copilot",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github-copilot.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "google-gemini",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google-gemini.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
