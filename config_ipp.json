@@ -38,9 +38,10 @@
     },
     {
       "type": "selector",
-      "tag": "🤖 AI",
+      "tag": "🤖 OpenAI",
       "interrupt_exist_connections": true,
       "outbounds": [
+        "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
         "🇹🇼 台湾节点",
@@ -637,10 +638,9 @@
       {
         "action": "route",
         "rule_set": [
-          "OpenAI",
-          "Gemini"
+          "OpenAI"
         ],
-        "outbound": "🤖 AI"
+        "outbound": "🤖 OpenAI"
       },
       {
         "action": "route",
@@ -756,13 +756,6 @@
         "tag": "OpenAI",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
-        "format": "binary",
-        "download_detour": "🎯 全球直连"
-      },
-      {
-        "tag": "Gemini",
-        "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/senshinya/singbox_ruleset/main/rule/Gemini/Gemini.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
