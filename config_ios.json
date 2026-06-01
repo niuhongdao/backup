@@ -38,7 +38,7 @@
     },
     {
       "type": "selector",
-      "tag": "🤖 AI",
+      "tag": "🤖 OpenAI",
       "interrupt_exist_connections": true,
       "outbounds": [
         "🇭🇰 香港节点",
@@ -638,9 +638,9 @@
       {
         "action": "route",
         "rule_set": [
-          "OpenAI"
+          "geosite-openai"
         ],
-        "outbound": "🤖 AI"
+        "outbound": "🤖 OpenAI"
       },
       {
         "action": "route",
@@ -753,9 +753,9 @@
         "download_detour": "🎯 全球直连"
       },
       {
-        "tag": "OpenAI",
+        "tag": "geosite-openai",
         "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/senshinya/singbox_ruleset/main/rule/OpenAI/OpenAI.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
