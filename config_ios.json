@@ -638,7 +638,7 @@
       {
         "action": "route",
         "rule_set": [
-          "OppenAI",
+          "OpenAI",
           "Gemini"
         ],
         "outbound": "🤖 AI"
