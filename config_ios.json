@@ -638,8 +638,7 @@
       {
         "action": "route",
         "rule_set": [
-          "OpenAI",
-          "Gemini"
+          "OpenAI"
         ],
         "outbound": "🤖 AI"
       },
@@ -757,13 +756,6 @@
         "tag": "OpenAI",
         "type": "remote",
         "url": "https://testingcf.jsdelivr.net/gh/senshinya/singbox_ruleset/main/rule/OpenAI/OpenAI.srs",
-        "format": "binary",
-        "download_detour": "🎯 全球直连"
-      },
-      {
-        "tag": "Gemini",
-        "type": "remote",
-        "url": "https://testingcf.jsdelivr.net/gh/senshinya/singbox_ruleset/main/rule/Gemini/Gemini.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
