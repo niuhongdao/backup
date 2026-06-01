@@ -38,7 +38,7 @@
     },
     {
       "type": "selector",
-      "tag": "🤖 OpenAI",
+      "tag": "🤖 AI",
       "interrupt_exist_connections": true,
       "outbounds": [
         "🇭🇰 香港节点",
@@ -640,7 +640,7 @@
         "rule_set": [
           "OpenAI"
         ],
-        "outbound": "🤖 OpenAI"
+        "outbound": "🤖 AI"
       },
       {
         "action": "route",
