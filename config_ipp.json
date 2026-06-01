@@ -41,7 +41,6 @@
       "tag": "🤖 OpenAI",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "🇭🇰 香港节点",
         "🇯🇵 日本节点",
         "🇸🇬 新加坡节点",
         "🇹🇼 台湾节点",
@@ -638,7 +637,8 @@
       {
         "action": "route",
         "rule_set": [
-          "OpenAI"
+          "OpenAI",
+          "Copilot"
         ],
         "outbound": "🤖 OpenAI"
       },
@@ -756,6 +756,13 @@
         "tag": "OpenAI",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "Copilot",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github-copilot.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
