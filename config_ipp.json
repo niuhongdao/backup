@@ -637,7 +637,8 @@
       {
         "action": "route",
         "rule_set": [🤖 AI
-          "OpenAI"
+          "OpenAI",
+          "Gemini"
         ],
         "outbound": ""
       },
@@ -755,6 +756,13 @@
         "tag": "OpenAI",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
+        "format": "binary",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "Gemini",
+        "type": "remote",
+        "url": "https://testingcf.jsdelivr.net/gh/senshinya/singbox_ruleset/main/rule/Gemini/Gemini.srs",
         "format": "binary",
         "download_detour": "🎯 全球直连"
       },
