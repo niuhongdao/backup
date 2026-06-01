@@ -636,11 +636,11 @@
       },
       {
         "action": "route",
-        "rule_set": [🤖 AI
+        "rule_set": [
           "OpenAI",
           "Gemini"
         ],
-        "outbound": ""
+        "outbound": "🤖 AI"
       },
       {
         "action": "route",
